@@ -1,0 +1,140 @@
+@font-face {
+	font-family: champagne;
+	src: url('../fonts/Champagne & Limousines Bold.ttf');
+}
+
+@font-face {
+	font-family: snacker;
+	src: url('../fonts/SnackerComic_PerosnalUseOnly.ttf');
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-mox-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.entryPage {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 102, 102);
+}
+
+.header {
+	width: 100%;
+	font-family: snacker;
+	color: white;
+	font-size: 6em;
+	padding-top: 200px;
+}
+
+.textToSpeak {
+	text-align: center;
+	font-size: 2em;
+}
+
+.startGame {
+	position: absolute;
+	width: 200px;
+	top: 60%;
+	left: calc(50% - 100px);
+	background: transparent;
+	outline: none;
+	border: 2px solid white;
+	padding: 20px 0px;
+	color: white;
+	font-family: champagne;
+	font-size: 1em;
+	border-radius: 10px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.startGame:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-transform: scale(1.2);
+}
+
+.play {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(217, 217, 217);
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+}
+
+.play.init {
+	left: 100%;
+}
+
+.play.final {
+	left: 0px;
+}
+
+.saidLetters {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-family: snacker;
+	color: rgba(0, 64, 128, 1);
+	font-size: 8em;
+	padding-top: 150px;
+	border-bottom: 2px solid rgba(0,64,128,1);
+	margin-bottom: 50px;
+}
+
+.but {
+	display: inline-block;
+	background: transparent;
+	padding: 20px;
+	background-color: rgb(0,64,128);
+	border: 2px solid rgba(0,64,128,1);
+	border-radius: 100px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-left: 30px;
+}
+
+.but:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-transform: scale(1.2);
+}
+
+.skipBut {
+	width: 300px;
+	font-size: 1em;
+	margin-top: 100px;
+	padding: 10px;
+	font-family: champagne;
+	color: rgba(0,64,128,1);
+	position: relative;
+	background-color: rgba(0,64,128,1);
+	color: white;
+	outline: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+} 
